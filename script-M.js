@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
           <div style="font-size:16px; font-weight:bold; color:#00e6ff;">${member.name}</div>
           <div style="font-size:13px; margin:6px 0;">${member.profession}</div>
           <a href="${member.website}" target="_blank" style="font-size:13px; color:#00e6ff; text-decoration:none;">Site web ↗</a>
-          <div style="font-size:12px; margin-top:8px; color:#aaa;">${member.email}</div>
         `;
         return block;
       };
