@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const topMembersContainer = document.getElementById('topMembers');
   const bottomMembersContainer = document.getElementById('bottomMembers');
-  const membersDataUrl = 'https://cdn.jsdelivr.net/gh/bw-n/NM-activ/members.json';
+
+  // ✅ On utilise GitHub RAW pour éviter le cache jsDelivr
+  const membersDataUrl = 'https://raw.githubusercontent.com/bw-n/NM-activ/main/members.json';
 
   fetch(membersDataUrl)
     .then(response => {
