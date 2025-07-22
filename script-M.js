@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const topMembersContainer = document.getElementById('topMembers');
   const bottomMembersContainer = document.getElementById('bottomMembers');
-  const membersDataUrl = 'https://cdn.jsdelivr.net/gh/bw-n/NM-activ/members.json?v=' + Date.now();
+  const membersDataUrl = 'https://raw.githubusercontent.com/bw-n/NNM-activ/main/members.json?v=' + Date.now();
 
   fetch(membersDataUrl)
     .then(response => {
